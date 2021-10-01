@@ -1,0 +1,81 @@
+body{
+	background: yellowgreen;
+}
+
+.example{
+	font-size: 100px;
+	text-align: center;
+	font-family: 'Space Mono', monospace;
+}
+
+.example:hover{
+	transition: all 2s ease-in-out;
+	max-width: 2000px;
+	padding: 100px 50px;
+    margin: auto;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.asleep{
+	text-align: center;font-size: 250px;
+}
+.asleep:hover{
+	background: -webkit-linear-gradient(#FF0000, #2E8B57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.8s ease;
+	cursor: pointer;
+	font-variant-caps: 200px;
+	background-color: paleturquoise;
+	
+}
+.messy:hover {
+	transition: all 10s ease-in-out;
+	max-height: 500px;
+	width: 400px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  margin: 1 auto;
+  background-color: #5293d5;
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: all 1s ease-in-out;
+ }
+
+.example2{
+	font-size: 300px;
+	font-family: 'Grechen Fuemen', cursive;
+	font-family: 'Rubik Beastly', cursive;
+	text-align: center;
+}
+
+.example2:hover{
+	cursor: pointer;
+	max-width: 2000px;
+    padding: 100px 50px;
+    margin: auto;
+    font-weight: 300;
+	background-color:burlywood;
+	font-size: 30em;
+}
+
+.messy{
+	text-align: center;
+	font-size: 150px;
+}
+img{
+	max-width: 300px;
+
+}
+
+img:hover{
+	max-width: 500px;
+	border-radius: 30px;
+  width: 200px;
+  height: 150px;
+  background-color: ghostwhite;
+  -webkit-transform: scale(2.25);
+  cursor: pointer;
+}
+

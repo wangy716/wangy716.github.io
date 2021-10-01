@@ -1,0 +1,18 @@
+.letshear{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 96px;
+	line-height: 105px;
+	position: absolute;
+	right: 50%;
+}
+
+img{
+	position: absolute;
+	right: 190px;	
+	top: 1px;
+}
+
+img:hover{
+	cursor: pointer;
+}
+	

@@ -1,0 +1,47 @@
+.h1{
+	font-family: 'Gemunu Libre', sans-serif;
+	text-align: center;
+	font-size: 90px;
+	shape-margin: all;
+
+}
+
+.square1{
+	font-family: 'Gemunu Libre', sans-serif;
+	text-align: center;
+
+}
+
+.q1{
+	font-family: 'Gemunu Libre', sans-serif;
+	border-style: solid;
+    border-top-width: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.square2{
+  color: white;
+  transition: all 3s linear;
+  border-style: dashed;
+  font-family: 'Gemunu Libre', sans-serif;
+  padding: 10px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.square2:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.rn{
+	text-align: center;
+}
+
+.r{
+	font-size: large;
+	text-align: center;
+	padding-bottom: 5px;
+}
+

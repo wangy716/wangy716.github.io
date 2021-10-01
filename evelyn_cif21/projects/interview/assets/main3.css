@@ -1,0 +1,63 @@
+body{
+	background-color: lightyellow;
+}
+
+.h1{
+	font-family: 'Gluten', cursive;
+  font-size: 90px;
+  text-align: center;
+  padding-left: 30px;
+  color: deeppink;
+}
+
+.square1{
+	color: dimgray;
+	font-family: 'Gluten', cursive;
+	font-weight: 700;
+	padding-top: 25px;
+	padding-left: 10%;
+}
+
+.q1{
+	color: antiquewhite;
+	font-family: 'Gluten', cursive;
+	font-weight: 100;
+	font-size: 22px;
+	padding: 1.5%;
+	border-style: solid;
+	border-radius: 15px;
+	border-color:grey;
+	background-color: grey;
+	color:white;
+	margin-left: 13%;
+	margin-right: 35%;
+}
+
+.square2{
+	margin-bottom:50px;
+}
+
+.rn{
+	font-family: 'Gluten', cursive;
+	font-weight: 700;
+	text-align: right;
+	color: deeppink;
+	margin-right: 10%;
+}
+
+.r{
+	font-family: 'Gluten', cursive;
+	font-weight: 200;
+	font-size: 30px	;
+	color: white;
+	border-style: dashed;
+	border-radius: 15px;
+	border-color: deeppink;
+	text-align: left;
+	background-color: deeppink;
+	margin-left: 35%;
+	margin-right: 13%;
+	padding: 1.5%;
+}
+
+
