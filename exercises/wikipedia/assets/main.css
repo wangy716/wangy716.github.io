@@ -1,0 +1,132 @@
+body{
+  background-color: black;
+	margin-left: 17%;
+	margin-right: 17%;
+}
+
+img{
+  max-width: 100%;
+}
+.chamaeleon{
+	font-family: hwt-mardell, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 170px;
+	text-align: center;
+	color: greenyellow;
+	padding-bottom: 30px;
+}
+.c{
+	font-size: 400px;
+}
+.g{
+	font-family: chinchilla, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 300px;
+}
+
+.content{
+	display:flex;
+	flex-direction: column;
+	color: #042135;
+	text-align: left;
+	align-items: center;
+}
+
+.item {
+	color: black;
+  width: 300px;
+  justify-content: flex-start;
+  align-content: flex-end;
+
+  background-color: black;
+}
+
+h2{
+	color:white;
+}
+
+.first{
+	font-size: 35px;
+	text-align: left;
+	font-family: chennai,sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: yellowgreen;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	
+
+}
+
+h3{
+	font-family: synthemesc,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size:40px ;
+	color: white;
+}
+
+h4{
+	font-family: synthemesc,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size:30px ;
+	color: white;
+}
+
+p{
+	font-family: roboto;
+	font-size: 20px;
+	color: greenyellow;
+}
+
+
+@media(max-width:1000px){
+	body{
+	background-color: white;
+}
+  .chamaeleon{
+  	color: black;
+  	font-size: 50px;
+  }
+  .c{
+  	font-size: 70px;
+  }
+  .g{
+  	font-size:60px;
+  }
+  .content{
+  	text-align: center;
+  }
+	.first{
+		color: black;
+		font-weight:400 ;
+		font-size: 30px;
+	}
+  h3,h4,p{
+  	color: black;
+  	text-align: center;
+  	font-family: chennai,sans-serif;
+		font-weight: 400;;
+
+  }
+}
+
+.imgfilters img {
+  display: block;
+  margin: 0 auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  padding: 60px 0 60px 0;
+}
+
+.imgfilters img:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+
+	
+}

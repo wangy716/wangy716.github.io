@@ -1,0 +1,45 @@
+body {
+  background-color:lightblue;
+  font-family:monospace;
+  padding:50px;
+}
+
+.title{
+  text-align: center;
+}
+
+h1,h2{
+  font-size: 100px;
+  font-weight: normal;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media(max-width: 600px){
+  h1,h2{
+    font-size: 50px;
+  }
+}
+
+/* If the browser window is smaller than 650px, the background color will change to black and the text to white: */
+@media (max-width: 600px) {
+  body {
+    background-color: black;
+    color:  white;
+  }
+}
+
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 60px;
+  }
+}
