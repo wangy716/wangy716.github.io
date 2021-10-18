@@ -110,7 +110,52 @@ p{
   	text-align: center;
   	font-family: chennai,sans-serif;
 		font-weight: 400;;
+  }
+  .item{
+  	background-color: white;
+  }
+  h2{
+  	color: black;
+  }
+}
 
+
+@media(max-height:800px){
+	body{
+	background-color: greenyellow;
+}
+  .chamaeleon{
+  	color: hotpink;
+  	font-size: 100px;
+  }
+  .c{
+  	font-size: 140px;
+  }
+  .g{
+  	font-size:120px;
+  }
+  .content{
+  	text-align: center;
+  }
+	.first{
+		color: hotpink;
+		font-weight:400 ;
+		font-size: 30px;
+	}
+  h3,h4,p{
+  	color: hotpink;
+  	text-align: center;
+  	font-family: chennai,sans-serif;
+		font-weight: 400;;
+  }
+  h3{
+  	color: darkblue;
+  }
+  .item{
+  	background-color: transparent;
+  }
+  h2{
+  	color: darkblue;
   }
 }
 
