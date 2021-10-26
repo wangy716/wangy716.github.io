@@ -1,0 +1,607 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+
+.table{
+  height: 600px;
+  width: 800px;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+}
+.orange{
+  width: 152px;
+  height: 152px;
+  background-color: orangered;
+  border-radius: 50%;
+  position: absolute;
+  bottom:50px ;
+  right: 320px;
+  box-shadow: 10px 5px #ccc
+}
+.orange::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: dimgrey;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 90px;
+  right: 52px;
+}
+.orange::after{
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100px;
+  right: 62px;
+}
+
+.leaf1{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 94px;
+  bottom: 168px;
+}
+.leaf2{
+  width: 60px;
+  height: 60px;
+  border-radius: 100px 0;
+  background-color: green;
+  position: absolute;
+  left: 170px;
+  bottom: 380px;
+  transform: rotate(15deg);
+}
+.leaf3{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 470px;
+  bottom: 380px;
+  transform: rotate(25deg);
+}
+.leaf4{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px 0;
+  background-color: green;
+  position: absolute;
+  left: 445px;
+  bottom: 411px;
+  transform: rotate(1deg);
+}
+.leaf5{
+  width: 60px;
+  height: 60px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 445px;
+  bottom: 125px;
+  transform: rotate(90deg);
+}
+.leaf6{
+  width: 45px;
+  height: 45px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 255px;
+  bottom: 145px;
+  transform: rotate(65deg);
+}
+.leaf7{
+  width: 40px;
+  height: 40px;
+  border-radius: 100px 0;
+  background-color: green;
+  position: absolute;
+  left: 155px;
+  bottom: 135px;
+  transform: rotate(105deg);
+}
+.leaf8{
+  width: 65px;
+  height: 65px;
+  border-radius: 100px 0;
+  background-color: green;
+  position: absolute;
+  left: 145px;
+  bottom: 195px;
+  transform: rotate(-25deg);
+}
+.leaf9{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 195px;
+  bottom: 365px;
+  transform: rotate(-25deg);
+}
+.leaf10{
+  width: 55px;
+  height: 55px;
+  border-radius: 100px 0;
+  background-color: green;
+  position: absolute;
+  left: 355px;
+  bottom: 380px;
+  transform: rotate(-15deg);
+}
+.leaf11{
+  width: 65px;
+  height: 65px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 285px;
+  bottom: 280px;
+  transform: rotate(-1deg);
+}
+.leaf12{
+  width: 15px;
+  height: 15px;
+  border-radius: 100px 0;
+  background-color: green;
+  position: absolute;
+  left: 115px;
+  bottom: 100px;
+  transform: rotate(-190deg);
+}
+.leaf13{
+  width: 25px;
+  height: 25px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 285px;
+  bottom: 280px;
+  transform: rotate(-1deg);
+}
+.leaf14{
+  width: 15px;
+  height: 15px;
+  border-radius: 100px 0;
+  background-color: green;
+  position: absolute;
+  left: 115px;
+  bottom: 100px;
+  transform: rotate(-190deg);
+}
+.leaf15{
+  width: 20px;
+  height: 20px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 52px;
+  bottom: 210px;
+  transform: rotate(-120deg);
+}
+.leaf16{
+  width: 22px;
+  height: 22px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 69px;
+  bottom: 425px;
+  transform: rotate(-104deg);
+}
+.leaf17{
+  width: 22px;
+  height: 22px;
+  border-radius: 100px 0;
+  background-color: green;
+  position: absolute;
+  left: 325px;
+  bottom: 475px;
+  transform: rotate(-55deg);
+}
+.leaf18{
+  width: 25px;
+  height: 25px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 415px; 
+  bottom: 520px;
+  transform: rotate(15deg);
+}
+.leaf19{
+  width: 30px;
+  height: 30px;
+  border-radius: 100px 0;
+  background-color: darkgreen;
+  position: absolute;
+  left: 628px; 
+  bottom: 330px;
+  transform: rotate(15deg);
+}
+
+
+.flower{
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: darkred;
+  position: absolute;
+  bottom: 280px;
+  left: 450px;
+}
+.flower::after, .flower::before {
+  content: '';
+  position: absolute;
+  background: darkred;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  transform: rotate(60deg);
+}
+.flower::before {
+  transform: rotate(-60deg);
+}
+
+.flowerdown{
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: red;
+  position: absolute;
+  bottom: 190px;
+  left: 390px;
+  transform: rotate(45deg);
+}
+.flowerdown::after, .flowerdown::before {
+  content: '';
+  position: absolute;
+  background: red;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  transform: rotate(60deg);
+}
+.flowerdown::before {
+  transform: rotate(-60deg);
+}
+
+
+.flowerup{
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: darkred;
+  position: absolute;
+  bottom: 390px;
+  left: 390px;
+  transform: rotate(55deg);
+}
+.flowerup::after, .flowerup::before {
+  content: '';
+  position: absolute;
+  background: darkred;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  transform: rotate(60deg);
+}
+.flowerup::before {
+  transform: rotate(-60deg);
+}
+
+.flowercenter{
+  width: 140px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: orangered;
+  position: absolute;
+  bottom: 320px;
+  left: 290px;
+  transform: rotate(48deg);
+}
+.flowercenter::after, .flowercenter::before {
+  content: '';
+  position: absolute;
+  background: orangered;
+  border-radius: 20px;
+  width: 140px;
+  height: 60px;
+  transform: rotate(60deg);
+}
+.flowercenter::before {
+  transform: rotate(-60deg);
+}
+
+.flowerleft{
+  width: 120px;
+  height: 45px;
+  border-radius: 20px;
+  background-color: darkred;
+  position: absolute;
+  bottom: 420px;
+  left: 190px;
+  transform: rotate(45deg);
+}
+.flowerleft::after, .flowerleft::before {
+  content: '';
+  position: absolute;
+  background: darkred;
+  border-radius: 20px;
+  width: 120px;
+  height: 45px;
+  transform: rotate(60deg);
+}
+.flowerleft::before {
+  transform: rotate(-60deg);
+}
+.flowerleftupper{
+  width: 130px;
+  height: 49px;
+  border-radius: 20px;
+  background-color: orangered;
+  position: absolute;
+  bottom: 490px;
+  left: 80px;
+  transform: rotate(45deg);
+}
+.flowerleftupper::after, .flowerleftupper::before {
+  content: '';
+  position: absolute;
+  background: orangered;
+  border-radius: 20px;
+  width: 130px;
+  height: 49px;
+  transform: rotate(60deg);
+}
+.flowerleftupper::before {
+  transform: rotate(-60deg);
+}
+
+.flowerleftdown{
+  width: 130px;
+  height: 49px;
+  border-radius: 20px;
+  background-color: red;
+  position: absolute;
+  bottom: 290px;
+  left: 80px;
+  transform: rotate(45deg);
+}
+.flowerleftdown::after, .flowerleftdown::before {
+  content: '';
+  position: absolute;
+  background: red;
+  border-radius: 20px;
+  width: 130px;
+  height: 49px;
+  transform: rotate(60deg);
+}
+.flowerleftdown::before {
+  transform: rotate(-60deg);
+}
+
+.flowercenterdown{
+  width: 120px;
+  height: 49px;
+  border-radius: 150px;
+  background-color: orangered;
+  position: absolute;
+  bottom: 220px;
+  left: 180px;
+  transform: rotate(45deg);
+}
+.flowercenterdown::after, .flowercenterdown::before {
+  content: '';
+  position: absolute;
+  background: orangered;
+  border-radius: 150px;
+  width: 120px;
+  height: 49px;
+  transform: rotate(60deg);
+}
+.flowercenterdown::before {
+  transform: rotate(-55deg);
+}
+
+.white1{
+  width: 40px;
+  height: 40px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 135px;
+  bottom: 155px;
+}
+.white2{
+  width: 44px;
+  height: 44px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 65px;
+  bottom: 190px;
+}
+
+.white3{
+  width: 25px;
+  height: 25px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 120px;
+  bottom: 110px;
+}
+.white4{
+  width: 30px;
+  height: 30px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 85px;
+  bottom: 410px;
+}
+.white5{
+  width: 30px;
+  height: 30px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 330px;
+  bottom: 450px;
+}
+.white6{
+  width: 15px;
+  height: 15px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 450px;
+  bottom: 95px;
+}
+.white7{
+  width: 40px;
+  height: 40px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 285px;
+  bottom: 140px;
+}
+.white8{
+  width: 50px;
+  height: 50px;
+  border-radius: 150px;
+  background-color: white;
+  positi75on: absolute;
+  left: 285px;
+  bottom: 120px;
+}
+.white9{
+  width: 30px;
+  height: 30px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 390px;
+  bottom: 120px;
+}
+.white10{
+  width: 41px;
+  height: 41px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 385px;
+  bottom: 510px;
+}
+.white11{
+  width: 50px;
+  height: 50px;
+  border-radius: 150px;
+  background-color: white;
+  position: absolute;
+  left: 585px;
+  bottom: 310px;
+}
+
+.circle1{
+  width: 35px;
+  height: 35px;
+  border-radius: 150px;
+  background-color: orange;
+  position: absolute;
+  left: 492px;
+  bottom: 284px;
+}
+.circle2{
+  width: 36px;
+  height: 36px;
+  border-radius: 150px;
+  background-color: gold;
+  position: absolute;
+  left: 429px;
+  bottom: 192px;
+}
+.circle3{
+  width: 35px;
+  height: 35px;
+  border-radius: 150px;
+  background-color: orange;
+  position: absolute;
+  left: 425px;
+  bottom: 390px;
+}
+.circle4{
+  width: 45px;
+  height: 45px;
+  border-radius: 150px;
+  background-color: gold;
+  position: absolute;
+  left: 127px;
+  bottom: 290px;
+}
+.circle5{
+  width: 55px;
+  height: 55px;
+  border-radius: 150px;
+  background-color: yellow;
+  position: absolute;
+  left: 332px;
+  bottom: 323px;
+}
+.circle6{
+  width: 40px;
+  height: 40px;
+  border-radius: 150px;
+  background-color: yellow;
+  position: absolute;
+  left: 220px;
+  bottom: 226px;
+}
+.circle7{
+  width: 46px;
+  height: 46px;
+  border-radius: 150px;
+  background-color: yellow;
+  position: absolute;
+  left: 127px;
+  bottom: 486px;
+}
+.circle8{
+  width: 40px;
+  height: 40px;
+  border-radius: 150px;
+  background-color: goldenrod;
+  position: absolute;
+  left: 230px;
+  bottom: 420px;
+}
