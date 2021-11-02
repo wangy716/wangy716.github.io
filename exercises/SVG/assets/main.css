@@ -1,0 +1,52 @@
+
+@keyframes frogSpin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes colorSwap {
+  0% {
+    fill: default;
+  }
+  100% {
+    fill: darkred;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#frog:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+#frog {
+  animation: frogSpin 5s ease-out infinite;
+  height:500px;
+  animation-delay: 2s;
+}
+
+
+#frog {
+  animation: frogSpin 5s ease-out infinite;
+  height:500px;
+}
+
+#frog path, #frog circle {
+  animation: colorSwap 5s ease-in infinite alternate, fade 5s ease-in infinite alternate-reverse;
+}
+
+body{
+  margin: 10%;
+}
