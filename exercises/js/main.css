@@ -1,0 +1,59 @@
+body {
+  background-color:  black;
+}
+
+h1{ 
+  font-family: input-mono, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200px;
+  align-items: center;
+
+}
+section {
+  display:  flex;
+  flex-direction:  column;
+  align-items:  center;
+  height:  80vh;
+}
+
+.button {
+  padding: 50px 50px;
+  margin-top: 2%;
+  border-radius: 50%;
+  background-color:  white;
+  color:  black;
+  font-size:  60px;
+  font-size: 20px;
+  text-align:  center;
+  transition:  all 100ms;
+  font-family: input-mono, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button:hover {
+  background-color: cadetblue;
+  cursor:  pointer;
+}
+
+.buttonOn {
+  background-color:  darksalmon;
+  color:  white;
+}
+
+.light {
+  background-color: papayawhip;
+}
+
+input{
+  margin-top: 5%;
+  padding: 0.5%;
+  font-family: input-mono, monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+input:hover{
+  cursor: pointer;
+}
