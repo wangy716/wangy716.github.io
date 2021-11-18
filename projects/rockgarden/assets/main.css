@@ -4,6 +4,10 @@ body{
 	margin: 5%;
 }
 
+html {
+    scroll-behavior: smooth;
+    cursor: url('assets/imgs/cursor.png'), auto;	
+}
 
 /* Style the header */
 .header {
@@ -29,6 +33,7 @@ body{
 .sticky + .content {
   padding-top: 102px;
 }
+
 
 
 img{
@@ -59,7 +64,13 @@ border: 2px solid;
     width: 100%;
     padding: 2%;
   }
+
 }
+
+ img:hover{ cursor: pointer; }
+
+
+  
 
 
 
