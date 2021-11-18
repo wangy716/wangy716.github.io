@@ -1,0 +1,67 @@
+body{
+	background-color: white;
+	box-sizing: border-box;
+	margin: 5%;
+}
+
+
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+img{
+width:100%;
+border: 2px solid;
+
+
+}
+
+.row {
+  display: flex;  
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+.catsinformation{
+	padding-bottom: 5%;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {   
+    width: 100%;
+    padding: 2%;
+  }
+}
+
+
+
+
+
