@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Berber</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+     .header {
+    font-family: 'Press Start 2P', cursive;
+    margin: 10%;
+}
+    .header p{
+      margin-top: 2%;
+      font-size: 10px;
+    }
+
+    .float-button {
+    position: fixed;
+    height: 50px;
+    width: 40px;
+    bottom: 90px;
+    right: 50px;
+    text-align: center;
+    background: transparent;
+    z-index: 1;
+}
+    }
+    #container {
+      position:relative;
+    }
+    .box {
+      float:left;
+      padding:5px;
+      transition:all 2s;
+    }
+    .box_img {
+      padding:5px;
+      border:1px solid #ccc;
+      box-shadow: 0 0 5px #ccc;
+      border-radius:5px;
+    }
+    .box_img img {
+      width:250px;
+      height:auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+  <h2>Berber</h2>
+  <p>❤️Love: small fish meat chunks</br></br>😴Temper: sleepy/love humans<br><br>📌Location: near Zhai residential area</p>
+</div>
+<div class="float-button"><a href="javascript:history.go(-1)" class="header-back jsBack">
+  <button>BACK "meow~"</button></a>
+  </a>
+</div>
+
+  <div id="container">
+    <div class="box">
+      <div class="box_img">
+          <img src="img/Berber/img1.jpg" width="500" height="750">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/Berber/img2.jpg" width="500" height="750">
+      </div>
+    </div>
+      <div id="container">
+    <div class="box">
+      <div class="box_img">
+          <img src="img/Berber/img3.jpg" width="500" height="750">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/Berber/img4.jpg" width="500" height="750">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  var cparent = document.getElementById("container");
+
+  window.onload = function(){
+    imglocation("container","box");
+    var imgData = {"data"};
+    
+    window.onscroll = function(){
+      if(checkFlag()){
+        for(var i = 0;i<imgData.data.length;i++) {
+          var ccontent = document.createElement("div");
+          ccontent.className = "box";
+          cparent.appendChild(ccontent);
+          var boximg = document.createElement("div");
+          boximg.className = "box_img";
+          ccontent.appendChild(boximg);
+          var Img = document.createElement("img");
+          Img.src = "img/" + imgData.data[i].src;
+          boximg.appendChild(Img);
+        }
+      }
+      imglocation("container","box");
+    }
+
+    window.onresize = function() {
+      imglocation("container","box");
+    }
+  }
+
+  function checkFlag() {
+    var ccontent = getChildElement(parent,"box");
+    var lastContentHeight = ccontent[ccontent.length - 1].offsetTop;
+    var scrollTop = document.documentElement.scrollTop ||document.body.scrollTop;
+    var pageHeight = document.documentElement.clientHeight || document.body.clientHeight;
+    if(lastContentHeight < scrollTop + pageHeight) {
+       return true;
+    }  
+  }
+
+  function imglocation(parent,content) {
+    //将parent中内容全部取出,获取所以图片
+    var ccontent = getChildElement(cparent,content);
+    var imgWidth = ccontent[0].clientWidth;//图片的宽度
+    var OWidth = document.documentElement.clientWidth;//窗口宽度
+    var num = Math.floor(OWidth/imgWidth);
+    cparent.style.cssText = "width:" + imgWidth * num + "px;margin: 0 auto;";
+    var BoxheightArr = [];
+    for(var i = 0;i<ccontent.length;i++){
+      if(i<num){
+        BoxheightArr[i] = ccontent[i].offsetHeight;
+        ccontent[i].style = "";
+      } else {
+        var minHeight = Math.min.apply(null,BoxheightArr);
+        var minIndex = getminheightLocation(BoxheightArr,minHeight);
+        ccontent[i].style.position = "absolute";
+        ccontent[i].style.top = minHeight + "px";
+        ccontent[i].style.left = ccontent[minIndex].offsetLeft + "px";
+        BoxheightArr[minIndex] = BoxheightArr[minIndex] + ccontent[i].offsetHeight;
+      }
+    }
+  }
+
+  function getminheightLocation(BoxheightArr,minHeight) {
+    for(var i in BoxheightArr){
+      if(BoxheightArr[i] == minHeight) {
+        return i;
+      }
+    }
+  }
+
+  function getChildElement(parent,content){
+    var contentArr = [];
+    var allcontent = document.getElementsByTagName("*");
+    for(var i = 0; i<allcontent.length;i++) {
+      if(allcontent[i].className == content) {
+        contentArr.push(allcontent[i]);
+      }
+    }
+    return contentArr;
+  }
+  </script>
+</body>
+</html>
