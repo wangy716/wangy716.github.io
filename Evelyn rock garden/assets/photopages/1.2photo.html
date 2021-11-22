@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mango</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+ .header {
+    font-family: 'Press Start 2P', cursive;
+    margin: 10%;
+}
+    .header p{
+      margin-top: 2%;
+      font-size: 10px;
+    }
+
+    .float-button {
+    position: fixed;
+    height: 50px;
+    width: 40px;
+    bottom: 90px;
+    right: 50px;
+    text-align: center;
+    background: transparent;
+    z-index: 1;
+}
+    #container {
+      position:relative;
+    }
+    .box {
+      float:left;
+      padding:5px;
+      transition:all 2s;
+    }
+    .box_img {
+      padding:5px;
+      border:1px solid #ccc;
+      box-shadow: 0 0 5px #ccc;
+      border-radius:5px;
+    }
+    .box_img img {
+      width:250px;
+      height:auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+  <h2>Mango</h2>
+  <p>❤️Love: meat bar</br></br>😓Temper: talkative/naughty<br><br>📌Location: near Wenshan Lake</p>
+</div>
+<div class="float-button"><a href="javascript:history.go(-1)" class="header-back jsBack">
+  <button>BACK "meow~"</button></a>
+  </a>
+
+</div>
+
+  <div id="container">
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img1.jpg" width="500" height="750">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img2.jpg" width="500" height="566">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img3.jpg" width="500" height="309">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img4.jpg" width="532" height="300">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img5.jpg" width="500" height="330">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img6.jpg" width="500" height="376">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img7.jpg" width="500" height="728">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img8.jpg" width="500" height="750">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img9.jpg" width="500" height="566">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img10.jpg" width="500" height="309">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img11.jpg" width="532" height="300">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img12.jpg" width="500" height="330">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img13.jpg" width="500" height="376">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img14.jpg" width="500" height="728">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img15.jpg" width="500" height="750">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img16.jpg" width="500" height="566">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img17.jpg" width="500" height="309">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img18.jpg" width="532" height="300">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img19.jpg" width="500" height="330">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img20.jpg" width="500" height="376">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+          <img src="img/mango/img21.jpg" width="500" height="728">
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    var items = document.getElementsByClassName('item');
+    //定义间隙10像素
+    var gap = 10;
+    //进页面执行函数
+    window.onload = function () {
+        waterFall();
+    }
+
+    function waterFall() {
+        //首先确定列数 = 页面的宽度 / 图片的宽度
+        var pageWidth = getClient().width;
+        var itemWidth = items[0].offsetWidth;
+        var columns = parseInt(pageWidth / (itemWidth + gap));
+        var arr = [];//定义一个数组，用来存储元素的高度
+        for(var i = 0;i < items.length; i++){
+            if(i < columns) {
+                //满足这个条件则说明在第一行，文章里面有提到
+                items[i].style.top = 0;
+                items[i].style.left = (itemWidth + gap) * i + 'px';
+                arr.push(items[i].offsetHeight);
+            }else {
+                //其他行，先找出最小高度列，和索引
+                //假设最小高度是第一个元素
+                var minHeight = arr[0];
+                var index = 0;
+                for(var j = 0; j < arr.length; j++){//找出最小高度
+                   if(minHeight > arr[j]){
+                       minHeight = arr[j];
+                       index = j;
+                   } 
+                }
+                //设置下一行的第一个盒子的位置
+                //top值就是最小列的高度+gap
+                items[i].style.top = arr[index] + gap + 'px';
+                items[i].style.left = items[index].offsetLeft + 'px';
+
+                //修改最小列的高度
+                //最小列的高度 = 当前自己的高度 + 拼接过来的高度 + 间隙的高度
+                arr[index] = arr[index] + items[i].offsetHeight + gap;
+            }
+        }
+    }
+
+    //当页面尺寸发生变化时，触发函数，实现响应式
+    window.onresize = function () {
+        waterFall();
+    }
+
+    // clientWidth 处理兼容性
+    function getClient() {
+        return {
+            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+        }
+    }
+    // scrollTop兼容性处理
+    function getScrollTop() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
+  </script>
+</body>
+</html>
+
