@@ -5,4 +5,13 @@ function myFunction() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+};
+
+
+
+function fn(){
+var img=document.getElementById("img");
+img.classList.toggle("hide").innerHTML="MAP";
 }
+
+
