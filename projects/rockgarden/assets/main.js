@@ -11,7 +11,7 @@ function myFunction() {
 
 function fn(){
 var img=document.getElementById("img");
-img.classList.toggle("hide").innerHTML="MAP";
+img.classList.toggle("hide");
 }
 
 
