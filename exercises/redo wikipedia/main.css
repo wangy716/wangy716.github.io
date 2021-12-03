@@ -1,0 +1,123 @@
+body{
+	background-color: white;
+
+}
+
+
+.topsection{
+display: block;
+padding: 10px;
+animation: moving 4s infinite;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .information {
+  padding-top: 5%;
+}
+
+.information{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.big{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 250px;
+  text-align: center;
+  padding-top: 5%;
+
+}
+
+.header{
+  font-size: 30px;
+}
+
+.first{
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 100;
+padding-left: 5%;
+padding-right: 5%;
+padding-bottom: 4%;
+font-size: 150%;
+}
+
+.small{
+  padding-left: 11%;
+}
+
+h4{
+  padding-left: 5%;
+}
+
+ul {
+  list-style-type: none;
+margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+@keyframes moving{
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+@media(max-width:1000px){
+	.big{
+font-size: 80px;
+color: darkgreen;
+	}
+	.first{
+font-size:100%;
+text-align: center;
+color: darkgreen;
+	}
+    li a {
+ color: ghostwhite;
+}
+ul{
+ background-color: darkgreen;
+}
+li a:hover {
+  background-color: white;
+  color: darkgreen;
+}
+.information{
+	color: darkgreen;
+}
+}
