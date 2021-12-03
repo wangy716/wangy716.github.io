@@ -44,4 +44,17 @@
 	text-align: center;
 	padding-bottom: 5px;
 }
-
+@media(max-width: 1000px){
+.h1{
+	font-size: 100%;
+}
+	.q1{
+		font-size: 90%;
+	}
+	.r{
+		font-size: 90%;
+	}
+	.options{
+		font-size: 20%;
+	}
+}

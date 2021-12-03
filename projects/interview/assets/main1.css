@@ -1,15 +1,22 @@
+body{
+	margin-left: 5%;
+	margin-right: 5%;
+}
 
 
 .h1{
 	font-family: 'Press Start 2P', cursive;
 	text-align: center;
-	font-size: 90px;
+	font-size: 150%;
+	padding-top: 5%;
+	padding-bottom: 3%;
 }
+
 
 .square1{
 	font-family: 'Press Start 2P', cursive;
 	text-align: right;
-	padding-right: 450px;
+
 }
 
 .q1{
@@ -18,8 +25,7 @@
 	font-style: normal;
 	font-size: 25px;
 	text-align: right;
-	padding-left: 450px;
-	padding-right: 450px;
+
 }
 
 .square2{
@@ -44,4 +50,15 @@
 	font-style: normal;
 	font-size: 25px;
 
+}
+@media(max-width: 500px){
+	.q1{
+		font-size: 90%;
+	}
+	.r{
+		font-size: 90%;
+	}
+	.options{
+		font-size: 20%;
+	}
 }
