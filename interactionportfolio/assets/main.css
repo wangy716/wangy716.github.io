@@ -1,0 +1,134 @@
+body{
+margin-top: 2%;
+margin-left: 5%;
+cursor: url('some-img.ico'), default; 
+background-color: white;
+}
+
+.left {
+float: left;
+width: 200px;
+height: 200px;
+position: fixed;
+}
+
+.right {
+margin-left: 200px;
+padding-left: 2.5%;
+height: 1000px;
+
+}
+
+.header{
+margin-bottom: 2%;
+margin-left: 2%;
+font-family: 'DM Mono', monospace;
+font-weight: 400;
+font-size: 14px;
+margin-top: 10%;
+}
+
+.finish{
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  padding-left: 6%;
+
+}
+img{
+height: 100%;
+width: 100%;
+}
+
+iframe{
+height: 100%;
+width: 100%;
+}
+
+.menu{
+padding-top: 2%;
+margin-left: 18%;
+margin-bottom: 5%;
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+
+.block{
+border: solid black 1px; 
+background-color: black;
+border-radius: 5px;
+text-align: center;
+margin-bottom: 5%;
+margin-right: 20%;
+font-family: 'DM Mono', monospace;
+font-weight: 300;
+}
+
+a:hover {
+  color: black;
+  font-size: 15px;
+  animation: bigger 1s infinite;
+}
+
+.block:hover{
+  cursor: pointer;
+  background-color: #39FF14;
+  animation: bigger 1s infinite;
+}
+
+
+@keyframes bigger{
+  0%{
+transform: scale(1.5);
+  }
+  50%{
+transform: scale(2);
+  }
+  100%{
+transform: scale(1.5); 
+  }
+}
+
+.none{
+  display: none;
+}
+
+
+.element {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  margin-top: 10%;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: black;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: black;
+  }
+}
+
+
+
+
+
+
