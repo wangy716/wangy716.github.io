@@ -5,38 +5,34 @@ cursor: url('some-img.ico'), default;
 background-color: white;
 }
 
-.left {
-float: left;
-width: 200px;
-height: 200px;
-position: fixed;
+.content{
+  display: flex;
+    justify-content: space-between;
 }
-
-.right {
-margin-left: 200px;
-padding-left: 2.5%;
-height: 1000px;
-
+.left{
+  flex: 0 0 20%;
+}
+.right{
+  flex: 1;
 }
 
 .header{
 margin-bottom: 2%;
-margin-left: 2%;
+text-align: left;
 font-family: 'DM Mono', monospace;
 font-weight: 400;
-font-size: 14px;
+font-size: 14.5px;
 margin-top: 10%;
 }
 
 .finish{
   font-family: 'DM Mono', monospace;
-  font-size: 10px;
-  padding-left: 6%;
-
+  font-size: 14px;
 }
+
 img{
-height: 100%;
-width: 100%;
+height: 25%;
+width: 85%;
 }
 
 iframe{
@@ -46,8 +42,9 @@ width: 100%;
 
 .menu{
 padding-top: 2%;
-margin-left: 18%;
-margin-bottom: 5%;
+text-align: left;
+ont-family: 'DM Mono', monospace;
+font-weight: 500;
 }
 
 a{
@@ -67,7 +64,7 @@ font-weight: 300;
 }
 
 a:hover {
-  color: black;
+  color: white;
   font-size: 15px;
   animation: bigger 1s infinite;
 }
@@ -90,44 +87,70 @@ transform: scale(2);
 transform: scale(1.5); 
   }
 }
-
-.none{
-  display: none;
-}
-
-
-.element {
-  height: 250px;
-  width: 250px;
-  margin: 0 auto;
-  background-color: red;
-  animation-name: stretch;
-  animation-duration: 1.5s; 
-  animation-timing-function: ease-out; 
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  margin-top: 10%;
-}
-
-@keyframes stretch {
-  0% {
-    transform: scale(.3);
-    background-color: black;
-    border-radius: 100%;
+@keyframes turn{
+  0%{
+    transform: rotate(45deg);
   }
-  50% {
-    background-color: black;
-  }
-  100% {
-    transform: scale(1.5);
-    background-color: black;
+  100%{
+    transform: rotate(360deg);
   }
 }
 
 
+@media (max-width: 1200px) {
+  body {
+    background-color: black;
+  }
+  .header{
+    padding-left: 5%;
+    color: white;
+    font-size: 12px;
+  }
+  .menu{
+    font-weight: 500;
+    color: white;
+}
+  .block{
+    font-size: 10px;
+    text-align: left;
+}
+  .block:hover{
+    background-color: transparent;
+    animation: turn 2s infinite;
+  }
+  img{
+    filter: invert(100%);
+  }
+.finish{
+    color: white;
+    font-size: 2px;
+  }
+}
+
+
+@media (max-height: 650px) {
+  body {
+    background-color: #39FF14;
+  }
+
+  .header{
+    padding-left: 1%;
+    color: black;
+    font-size: 12px;
+  }
+  .menu{
+    font-weight: 500;
+    color:  black;
+}
+  .block{
+    font-size: 10px;
+    text-align: center;
+}
+
+.finish{
+    color: black;
+  }
+}
 
 
 
