@@ -42,9 +42,9 @@ width: 100%;
 
 .menu{
 padding-top: 2%;
+padding-bottom: 3%;
 text-align: left;
-ont-family: 'DM Mono', monospace;
-font-weight: 500;
+font-family: 'Press Start 2P', cursive;
 }
 
 a{
@@ -151,6 +151,7 @@ transform: scale(1.5);
     color: black;
   }
 }
+
 
 
 
